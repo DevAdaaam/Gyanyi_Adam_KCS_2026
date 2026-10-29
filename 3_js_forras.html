@@ -8,8 +8,30 @@
     <title>JavaScript Unit teszt feladat</title>
 	<script type="text/javascript">
 	<!-- Ide jön  a feladat megoldása... -->
-	
-	
+
+	//1.Feladat
+	function kivalogatParosOtven(array){
+    	return array.filter(number => number%2 ==0 && number > 50 );
+	}
+
+	//2.Feladat
+	function aBetukSzamaDiv(){
+    	const div = document.querySelector("div");
+    	return div.textContent.split("a").length - 1;
+	}
+
+	//3.feladat
+	function osszeadasFeliras(osztaly, x, y) {
+    	let osztaly2 = document.getElementsByClassName(osztaly)[0];
+		x = Number(x);
+		y = Number(y);
+		let osszeg = x + y;
+
+		let p = document.createElement("p");
+		p.textContent = `${x}+${y}=${osszeg}`;
+		osztaly2.appendChild(p);
+	}
+
 	<!-- Idáig -->
 	</script>
 	<script src="testBaseUnit.js"></script>
